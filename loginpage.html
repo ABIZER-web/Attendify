@@ -1,0 +1,54 @@
+<!-- /html/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendity Login</title>
+    <link rel="stylesheet" href="loginpage.css">
+    <link rel="icon" href="Slice 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading">
+        <img src="Slice 1.png" alt="Loading..." />
+    </div>
+
+    <div class="wrapper">
+        <!-- Left Side Section -->
+        <div class="left-side">
+            <h2>Track Your Attendance with Ease</h2>
+            <p>Introducing Attendity, your personal assistant to effortlessly manage attendance, stay on top of your schedule, and monitor your progress—all in one place.</p>
+        </div>
+        <!-- Right Side Login Section -->
+        <div class="container">
+            <h1>Attendity</h1>
+            <img src="Slice 1.png" alt="Notebook Image" class="illustration">
+            <form id="loginForm">
+                <h3>LOGIN TO YOUR ACCOUNT</h3>
+                <input type="email" placeholder="Your Institute Email ID" required>
+            
+                <!-- Password Field with Eye Icon -->
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="button" class="eye-button" onclick="togglePassword()">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+            
+                <!-- Forgot Password Link -->
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            
+                <!-- Generate Password Button -->
+                <button type="button" class="generate-password" onclick="generatePassword()">Generate Password</button>
+            
+                <button type="submit">LOG IN</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="loginpage.js"></script>
+</body>
+</html>
