@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrinidhi Gindhi - Mathematics</title>
+    <link rel="stylesheet" href="coa.css">
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    
+    <h1>Shrinidhi Gindhi</h1>
+    <h2>Mathematics</h2>
+    <button class="btn btn-add" onclick="addStudent()">Add Student</button>
+    
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Mark Attendance</th>
+                <th>Attendance Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student entries will appear here -->
+        </tbody>
+    </table>
+
+    <script src="coa.js"></script>
+    <script>
+        // Hide loading screen after content is loaded
+        window.onload = function() {
+            document.getElementById("loading").style.display = "none";
+        }
+    </script>
+</body>
+</html>

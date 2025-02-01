@@ -1,0 +1,168 @@
+/* /css/styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+.left-side {
+    color: #007bff;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.left-side h2 {
+    font-size: 32px; /* Increase the font size */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-size: 16px; /* Smaller paragraph font size */
+    text-align: center;
+    color: #333;
+    max-width: 90%; /* Make sure it doesn't stretch too wide */
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.illustration {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #dcdcdc;
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #666666;
+}
+
+.eye-button {
+    position: absolute;
+    left: 93%;
+    top: 18px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.forgot-password {
+    margin: 8px 0;
+    color: #007bff;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+.generate-password {
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.generate-password:hover {
+    background: #666666;
+}
+
+/* Loading Screen */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.loading img {
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

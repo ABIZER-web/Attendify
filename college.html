@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Dashboard</title>
+    <link rel="stylesheet" href="college.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center p-6">
+        <h1 class="text-3xl font-bold mb-6">College Dashboard</h1>
+        
+        <!-- Navigation -->
+        <div class="flex space-x-4 mb-6">
+            <button class="btn btn-blue" onclick="openPage('students')">Students</button>
+            <button class="btn btn-green" onclick="openTeacherDashboard()">Teachers</button>
+            <button class="btn btn-purple" onclick="openPage('events')">Events</button>
+        </div>
+        
+        <!-- Main Content -->
+        <div id="content" class="content-box">
+            <p class="text-center text-gray-700">Welcome to the college dashboard! Click the buttons above to navigate.</p>
+        </div>
+    </div>
+    
+    <script src="college.js"></script>
+</body>
+</html>
